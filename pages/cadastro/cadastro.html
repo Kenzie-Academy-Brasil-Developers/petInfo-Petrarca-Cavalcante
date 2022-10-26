@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cadastro.css">
+    <title>Petinfo - Cadastro</title>
+</head>
+<body>
+    <main>
+        <section class="register-section">
+            <div>
+                <h2>Cadastro</h2>
+                <button class="back-to-login-btn">Voltar para o login</button>
+            </div>
+            <form class="register-form" action="">
+                <ul>
+                    <li>
+                        <label for="register-user">Usuário</label>
+                        <input id="register-user" type="text" placeholder="Digite seu usuário aqui" required>
+                    </li>
+                    <li>
+                        <label for="register-email">Email</label>
+                        <input id="register-email" type="email" placeholder="Digite seu email aqui" required>
+                    </li>
+                    <li>
+                        <label for="register-photo">Link da foto de perfil</label>
+                        <input id="register-photo" type="text" placeholder="Insira o link aqui" required>
+                    </li>
+                    <li>
+                        <label for="register-password">Senha</label>
+                        <input id="register-password" type="text" placeholder="Digite sua senha aqui" required>
+                    </li>
+                    <button class="register-btn" type="submit">Cadastrar</button>
+                </ul>
+            </form>
+            <button class="back-to-login-btn">Voltar para login</button>
+        </section>
+        <section class="welcome-interface">
+            <h1>Petinfo</h1>
+            <p class="welcome-scream">Ooooooba!</p>
+            <p>Agora vamos poder contribuir para o bem estar
+                do seu pet por meio do conhecimento
+            </p>
+            <div>
+                <div class="pets-gallery">
+                    <figure>
+                        <img src="/src/vertical cat.svg" alt="">
+                    </figure>
+                    <div>
+                        <figure><img src="/src/sleeping cat.svg" alt=""></figure>
+                        <figure><img src="/src/dog looking up.svg" alt=""></figure>
+                        <figure><img src="/src/horizontal cat.svg" alt=""></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./cadastro.js"></script>
+</body>
+
+</html>

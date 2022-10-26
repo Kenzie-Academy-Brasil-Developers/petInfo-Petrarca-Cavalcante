@@ -1,0 +1,93 @@
+.modal-dark-background {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100rem;
+    background-color: rgba(68, 67, 67, 0.44);
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    transition: ease .2s;
+}
+
+.create-post-modal {
+    background-color: var(--grey-color-1);
+    padding: 40px 30px ;
+    border-radius: 4px;
+    width: 650px;
+    height: fit-content;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.newpost-modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.new-post-title {
+    width: 95%;
+    height: 25px;
+    border: 2px solid var(--grey-color-2)
+}
+
+.new-post-content{
+    width: 95%;
+    height: 130px;
+    border: 2px solid var(--grey-color-2)
+}
+
+.new-post-options {
+    align-self: flex-end;
+    display: flex;
+    gap: 12px;
+}
+.new-post-btns {
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: all .15s;
+    background-color: var(--grey-color-3);
+    border-radius: 4px;
+}
+.new-post-options button:hover{
+    opacity: 80%;
+}
+.submit-new-post {
+    background-color: var(--brand-color-1);
+    color: white;
+}
+
+.close-modal {
+    width: 28px;
+    height: 28px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.modal-main{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: ease .2s;
+}
+.modal-main h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.exclude-post-options {
+    display: flex;
+    gap: 10px;
+}
+.exclude-btns {
+    padding: 4px 8px;
+    border: 1px solid transparent;
+}
+.confirm-exclusion {
+    background-color: var(--red-color-1);
+    color: var(--grey-color-1);
+    border-radius: 4px;
+}

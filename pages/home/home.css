@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 21% 0 21%;
+}
+
+header button {
+    background-color: var(--brand-color-1);
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px transparent;
+    color: white;
+}
+
+.header-options{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.header-options figure {
+    border-radius: 60px;
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.feed-label {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--grey-color-1);
+    margin-bottom: 25px;
+    padding: 0px 22%;
+}
+
+.posts-feed{
+    padding: 0 23%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.post-card{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.post-content button {
+    width: fit-content;
+    background-color: #fff;
+    border: 1px solid transparent;
+    color: var(--brand-color-1);
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.edit-buttons{
+    display: flex;
+    gap: 12px;
+}
+.edit-buttons button {
+    width: fit-content;
+    background-color: #fff;
+    border: 1px solid var(--grey-color-2);
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 6px;
+    padding: 2px 6px;
+    transition: ease .15s;
+}
+.edit-buttons button:hover {
+
+    background-color: var(--grey-color-2);
+}
+
+.post-header div {
+    display: flex;
+}
+
+.avatar-figure{
+    width: 32px;
+}
+
+.avatar-figure img {
+    width: 100%;
+}
+
