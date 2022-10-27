@@ -9,6 +9,7 @@ const lBtn = document.querySelector(".login-btn")
 function goRegister (){
     createAccBtn.addEventListener('click', (event)=> {
         event.preventDefault()
+        console.log("ahhahaha")
         window.location.assign('./pages/cadastro/cadastro.html')
     })
 }

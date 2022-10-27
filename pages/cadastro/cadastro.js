@@ -45,7 +45,8 @@ function testee() {
     returnBtns.forEach(element => {
         element.addEventListener('click', (event) => {
             event.preventDefault()
-            window.location.replace = "../../index.html"
+
+            window.location.assign("../../index.html")
         })
     })
 }
