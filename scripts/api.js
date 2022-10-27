@@ -27,20 +27,19 @@ export async function login(data) {
         headers: { "Content-Type": "application/json" }
     })
         .then(res => res.json())
-        .then(res => {
-
+        .then((res) => {
+            if(res.token){
             localStorage.setItem("token", JSON.stringify(res.token))
-            window.location.assign("./pages/home/home.html")
-
-            return res
+            window.location.replace("./pages/home/home.html")
+            }
         })
-        .catch(err => {
+        .catch((err) => {
             console.error(err)
             const pokemon = {
                 tipo: "Error",
                 msg: err.message,
             } 
-            return pokemon
+            return err
         })
 
     return response

@@ -34,7 +34,16 @@ export async function openThePost(post) {
     userPicture.src = post.user.avatar
     user.innerText = post.user.username
     separator.innerText = "|"
-    date.innerText = post.createdAt
+    
+    const option = {
+        year: 'numeric',
+        month: ('long' || 'short' || 'numeric'),
+        weekday: ('long' || 'short'),
+        day: 'numeric'
+    }
+    const locale = 'pt-br'
+    const formatDate = new Date().toLocaleDateString( locale, option)
+    date.innerText = formatDate
 
     title.innerText = post.title
     content.innerText = post.content

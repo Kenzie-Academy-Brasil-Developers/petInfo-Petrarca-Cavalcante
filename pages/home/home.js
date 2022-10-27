@@ -50,9 +50,18 @@ export async function renderFeed(user) {
         userImg.src = element.avatar || "/src/noprofile.jpg"
         username.innerText = element.user.username
 
-        const dateResume = element.createdAt
+        
+
+        const option = {
+            year: 'numeric',
+            month: ('long' || 'short' || 'numeric'),
+            weekday: ('long' || 'short'),
+            day: 'numeric'
+        }
+        const locale = 'pt-br'
+        const formatDate = new Date().toLocaleDateString( locale, option)
        
-        postDate.innerText = element.createdAt
+        postDate.innerText = formatDate[0].toUpperCase() + formatDate.slice(1)
 
         editBtn.innerText = "Editar"
         excludeBtn.innerText = "Excluir"

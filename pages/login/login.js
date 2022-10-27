@@ -27,12 +27,13 @@ async function loginFunc() {
                 password: lPassword.value,
             }
             const test = await login(infosCatcher)
+            return test
         }
         
 
     })
 }
-loginFunc()
+console.log(loginFunc())
 
 function modalGen(message, type) {
     const errorBox = document.querySelector('.error-advice')
