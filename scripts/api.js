@@ -10,9 +10,11 @@ export async function createUser(data) {
     })
         .then(res => res.json())
         .then(res => {
+            window.location.replace("../../index.html")
             return res
         })
         .catch(err => console.error(err))
+        
 
     return response
 }

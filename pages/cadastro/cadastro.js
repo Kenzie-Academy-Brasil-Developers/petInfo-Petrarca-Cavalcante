@@ -31,9 +31,8 @@ async function registerFunc() {
         }
         let result = await createUser(infosCatcher)
         console.log(result)
-
-        // errorDisplay(result)
-        // console.log(rPhoto.value, rUser.value, rPasword.value, rEmail.value)
+        
+      
         }
     })
 
@@ -46,7 +45,7 @@ function testee() {
     returnBtns.forEach(element => {
         element.addEventListener('click', (event) => {
             event.preventDefault()
-            window.location.href = "../../index.html"
+            window.location.replace = "../../index.html"
         })
     })
 }
