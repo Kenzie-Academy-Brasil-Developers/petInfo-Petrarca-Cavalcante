@@ -2,6 +2,8 @@ import { renderFeed, homeBody } from "./home.js"
 import { updatePost } from "../../scripts/api.js"
 import {renderUser} from "../home/user.js"
 
+
+
 export async function editPost(postId, title, content) {
     const darkBackground = document.createElement('div')
     const modalBox = document.createElement('div')
@@ -77,3 +79,4 @@ export async function editPost(postId, title, content) {
         }
     })
 }
+

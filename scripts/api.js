@@ -10,7 +10,6 @@ export async function createUser(data) {
     })
         .then(res => res.json())
         .then(res => {
-            window.location.replace("../../Login.html")
             return res
         })
         .catch(err => console.error(err))
@@ -59,12 +58,15 @@ export async function userProfile() {
         }
     })
         .then(res => res.json())
-        .then(res => res)
+        .then(res => {
+
+            return res
+        })
         .catch(err => console.error(err))
 
-    return response
+   return response
 }
-
+userProfile()
 async function updateUser(data) {
     const urlCreate = `${baseUrl}users/profile`
     const token = JSON.parse(localStorage.getItem("token"))

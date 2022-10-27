@@ -57,6 +57,8 @@ export async function renderFeed(user) {
         excludeBtn.innerText = "Excluir"
 
         postTitle.innerText = element.title
+        
+
         postContent.innerText = element.content
         openPost.innerText = "Acessar publicação"
 
@@ -91,3 +93,4 @@ export async function renderFeed(user) {
 }
 await renderFeed( await renderUser())
 await newPostModal()
+
