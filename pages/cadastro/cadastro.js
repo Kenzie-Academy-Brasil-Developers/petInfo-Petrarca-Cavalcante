@@ -46,7 +46,7 @@ function testee() {
     returnBtns.forEach(element => {
         element.addEventListener('click', (event) => {
             event.preventDefault()
-            window.location.href = "../../Login.html"
+            window.location.href = "../../index.html"
         })
     })
 }
