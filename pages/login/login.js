@@ -15,21 +15,21 @@ function goRegister (){
 goRegister()
 
 async function loginFunc() {
-    loginForm.addEventListener('submit', async (event) => {
+    lBtn.addEventListener('click', async (event) => {
         event.preventDefault()
-        lBtn.classList.add('spinner-load')
-        lBtn.classList.add('hidden-text')
         
-        if(lEmail.value == undefined|| lPassword.value == undefined){
-            
+        
+        if(lEmail.value != ''|| lPassword.value != ''){
+            lBtn.classList.add('spinner-load')
+            lBtn.classList.add('hidden-text')
+            let infosCatcher = {
+                email: lEmail.value,
+                password: lPassword.value,
+            }
+            const test = await login(infosCatcher)
         }
-        let infosCatcher = {
-            email: lEmail.value,
-            password: lPassword.value,
-        }
+        
 
-        const test = await login(infosCatcher)
-        modalGen(test.message, test.type)
     })
 }
 loginFunc()

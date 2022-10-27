@@ -5,29 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/pages/login/login.css">
+    <link rel="stylesheet" href="./pages/login/loginForm.css">
+    <link rel="stylesheet" href="./pages/login/welcomeInterface.css">
+    <link rel="stylesheet" href="./pages/login/login.css">
+    <link rel="stylesheet" href="./styles/globalStyles.css">
     <title>Login PetInfo</title>
 </head>
 
 <body>
-<h1>Login</h1>
-<form action="submit" class="login-form">
-    <ul>
-        <li>
-            <label for="email-login">Email</label>
-            <input id="email-login" type="email" placeholder="escreva seu email aqui" required>
-        </li>
-        <li>
-            <label for="password-login">Senha</label>
-            <input id="password-login" type="text" placeholder="escreva sua senha aqui" required>
-        </li>
-    </ul>
-    <div class="error-advice"></div>
-    <button class="login-btn">Acessar</button>
-</form>
-<a href="./pages/cadastro/cadastro.html">Ainda não possui conta?</a>
-<p>Clicando no botão abaixo, você pode se cadastrar rapidamente</p>
-<button class="create-account-btn">Cadastrar</button>
-<script type="module" src="./pages/login/login.js"></script>
+    <main>
+        <section class="welcome-interface">
+            <h1>Petinfo</h1>
+            <p class="welcome-scream">Amor <span>e</span> carinho <span>por meio</span></p>
+            <p class="introdution">do conhecimento</p> 
+            <p>Todas as informações para melhorar a vida do seu pet em um só lugar
+            </p>
+            <div>
+                <div class="pets-gallery">
+                    <div class="pets-gallery-two">
+                        <figure><img src="/src/staringcat.svg" alt=""></figure>
+                        <figure><img src="/src/staringdog.svg" alt=""></figure>
+                        <figure><img src="/src/cutedog.svg" alt=""></figure>
+                    </div>
+                    <figure>
+                        <img src="/src/wihtecat.svg" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="login-section">
+            <h1>Login</h1>
+            <form action="submit" class="login-form">
+                <ul class="login-list">
+                    <li>
+                        <label for="email-login">Email</label>
+                        <input id="email-login" type="email" placeholder="escreva seu email aqui" required>
+                    </li>
+                    <li>
+                        <label for="password-login">Senha</label>
+                        <input id="password-login" type="text" placeholder="escreva sua senha aqui" required>
+                    </li>
+                </ul>
+                <div class="error-advice"></div>
+                <button class="login-btn">Acessar</button>
+            </form>
+            <a href="./pages/cadastro/cadastro.html">Ainda não possui conta?</a>
+            <div class="register-advice">
+            <p>Clicando no botão abaixo, você pode</p>
+            <p>se cadastrar rapidamente</p>
+            </div>
+            <button class="create-account-btn">Cadastrar</button>
+        </section>
+    </main>
+    <script type="module" src="./pages/login/login.js"></script>
 </body>
+
 </html>

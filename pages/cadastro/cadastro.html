@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./cadastro.css">
+    <link rel="stylesheet" href="./welcomeInterface.css">
+    <link rel="stylesheet" href="../../styles/globalStyles.css">
     <title>Petinfo - Cadastro</title>
 </head>
 <body>
     <main>
         <section class="register-section">
-            <div>
+            <div class="register-header">
                 <h2>Cadastro</h2>
                 <button class="back-to-login-btn">Voltar para o login</button>
             </div>
@@ -35,9 +37,11 @@
                     </li>
                 </ul>
                 <div class="error-advice"></div>
-                <button class="register-btn">Cadastrar</button>
             </div>
-            <button class="back-to-login-btn">Voltar para login</button>
+            <div class="register-buttons-options">
+            <button class="register-btn register-options">Cadastrar</button>
+            <button class="back-to-login-btn register-options">Voltar para login</button>
+            </div>
         </section>
         <section class="welcome-interface">
             <h1>Petinfo</h1>
@@ -50,7 +54,7 @@
                     <figure>
                         <img src="/src/vertical cat.svg" alt="">
                     </figure>
-                    <div>
+                    <div class="pets-gallery-two">
                         <figure><img src="/src/sleeping cat.svg" alt=""></figure>
                         <figure><img src="/src/dog looking up.svg" alt=""></figure>
                         <figure><img src="/src/horizontal cat.svg" alt=""></figure>

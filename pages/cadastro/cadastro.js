@@ -1,5 +1,7 @@
 import { createUser } from "/scripts/api.js"
+import {errorDisplay} from "./errorAdvice.js"
 
+export const errorPlace = document.querySelector('.error-advice')
 const inputs = document.getElementsByTagName("input")
 const form = document.querySelector(".register-form")
 const rUser = document.querySelector("#register-user")
@@ -12,7 +14,6 @@ const rBtn = document.querySelector(".register-btn")
 
 async function registerFunc() {
     if (rUser.value == "" || rPasword.value == "" || rEmail.value == "" || rPhoto.value == "") {
-
         rBtn.disabled
     }
 
@@ -28,9 +29,12 @@ async function registerFunc() {
             password: rPasword.value,
             avatar: rPhoto.value,
         }
-        console.log(await createUser(infosCatcher))
-    }
+        let result = await createUser(infosCatcher)
+        console.log(result)
+
+        // errorDisplay(result)
         // console.log(rPhoto.value, rUser.value, rPasword.value, rEmail.value)
+        }
     })
 
 }

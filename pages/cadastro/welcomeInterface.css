@@ -1,0 +1,23 @@
+.welcome-interface {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.welcome-scream{
+    color: var(--brand-color-1);
+    font-size: 25px;
+    font-weight: 600;
+}
+.pets-gallery {
+    display: flex;
+    gap: 15px;
+}
+
+.pets-gallery-two {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 196px;
+}
