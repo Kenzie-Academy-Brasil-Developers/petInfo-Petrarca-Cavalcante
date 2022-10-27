@@ -46,7 +46,7 @@ main {
     bottom: 0;
     margin: auto;
     border: 4px solid transparent;
-    border-top-color: #ffffff;
+    border-top-color: black;
     border-radius: 50%;
     animation: button-spinner 1s ease infinite;
 }

@@ -37,10 +37,12 @@ export function newPostModal() {
         edicao.innerText = "Edição"
         labelTitle.innerText = "Título do post"
         labelContent.innerText = "Conteúdo do post"
+        inputTitle.placeholder = "Digite o título aqui..."
+        inputContent.placeholder = "Desenvolva o conteúdo do post aqui..."
 
         closeModal.innerText = "X"
         cancelBtn.innerText = "Cancelar"
-        saveBtn.innerText = "Salvar Alterações"
+        saveBtn.innerText = "Publicar"
         
         
         header.append(edicao, closeModal)

@@ -19,7 +19,7 @@ async function loginFunc() {
         event.preventDefault()
         
         
-        if(lEmail.value != ''|| lPassword.value != ''){
+        if(lEmail.value != '' && lPassword.value != ''){
             lBtn.classList.add('spinner-load')
             lBtn.classList.add('hidden-text')
             let infosCatcher = {

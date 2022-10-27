@@ -1,0 +1,25 @@
+.open-post-modal {
+    display: flex;
+    gap: 10px;
+}
+.modal-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.open-post-main {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.open-post-user-fig {
+    width: 32px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+.open-post-user-fig img {
+    max-width: 100%;
+}

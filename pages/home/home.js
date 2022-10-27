@@ -3,6 +3,7 @@ import {renderUser} from "../home/user.js"
 import {newPostModal} from "./createPost.js"
 import {removePostFunc} from "./deletePost.js"
 import {editPost} from "./editPost.js"
+import {openThePost} from "./openPost.js"
 
 
 const profileImg =document.querySelector(".user-picture") 
@@ -87,6 +88,11 @@ export async function renderFeed(user) {
            event.preventDefault()
             await removePostFunc(element.id)
             await renderFeed(await renderUser())
+        })
+
+        openPost.addEventListener('click', async (event)=> {
+            event.preventDefault()
+            await openThePost(element)
         })
     })
     
